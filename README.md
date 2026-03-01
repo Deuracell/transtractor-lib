@@ -40,9 +40,9 @@ High-level Python API built on `transtractor_core`:
 
 ### 3. **transtractor_rs** (Rust API)
 Complete Rust API equivalent to the Python version:
-- Uses `pdfium-render` for PDF text extraction
+- Uses pure Rust `unpdf` library for PDF text extraction (no external dependencies)
 - High-level `Parser` struct for end-to-end parsing
-- Native Rust solution with no Python dependencies
+- Native Rust solution with no Python dependencies, completely self-contained
 
 ## Installation
 
