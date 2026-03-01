@@ -14,6 +14,6 @@ crate-type = ["rlib"]
 [dependencies]
 transtractor_core = { path = "../transtractor_core" }
 transtractor_configs = { path = "../transtractor_configs" }
-unpdf = "0.1"
+lopdf = "0.39"
 thiserror = "1.0"
 tempfile = "3.0"

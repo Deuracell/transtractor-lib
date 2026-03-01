@@ -113,7 +113,6 @@ dependencies = [
  "iana-time-zone",
  "js-sys",
  "num-traits",
- "serde",
  "wasm-bindgen",
  "windows-link",
 ]
@@ -980,11 +979,11 @@ dependencies = [
 name = "transtractor_rs"
 version = "0.9.2"
 dependencies = [
+ "lopdf",
  "tempfile",
  "thiserror 1.0.69",
  "transtractor_configs",
  "transtractor_core",
- "unpdf",
 ]
 
 [[package]]
@@ -1031,23 +1030,6 @@ name = "unindent"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7264e107f553ccae879d21fbea1d6724ac785e8c3bfc762137959b5802826ef3"
-
-[[package]]
-name = "unpdf"
-version = "0.1.9"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd3bdaa44b1a6cd6d89b635066562b86e47a7cbae1a2ce541e9e27ee62afc9c3"
-dependencies = [
- "chrono",
- "log",
- "lopdf",
- "rayon",
- "regex",
- "serde",
- "serde_json",
- "thiserror 2.0.18",
- "unicode-normalization",
-]
 
 [[package]]
 name = "version_check"
