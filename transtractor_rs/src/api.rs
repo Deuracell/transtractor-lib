@@ -26,6 +26,16 @@ impl Parser {
         }
     }
 
+    /// Create a new parser pre-loaded with all bundled default configurations.
+    /// Mirrors Python's `Parser()` behavior.
+    pub fn with_defaults() -> Result<Self, crate::error::ParseError> {
+        let mut parser = Self::new();
+        for config_json in transtractor_configs::CONFIGS {
+            parser.import_config_from_str(config_json)?;
+        }
+        Ok(parser)
+    }
+
     /// Load a configuration from a JSON file
     pub fn import_config_from_file(&mut self, path: &str) -> Result<(), ParseError> {
         self.db

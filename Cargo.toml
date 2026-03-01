@@ -1,3 +1,3 @@
 [workspace]
-members = ["transtractor_core", "transtractor_py", "transtractor_rs"]
+members = ["transtractor_core", "transtractor_configs", "transtractor_py", "transtractor_rs"]
 resolver = "2"
