@@ -1,0 +1,18 @@
+[package]
+name = "transtractor_core"
+version = "0.9.2"
+edition = "2024"
+description = "Pure Rust parsing engine for extracting transactions from PDF bank statements. No dependencies, suitable for embedded and headless use."
+authors = ["Daniel Weber <develop@transtractor.net>"]
+license = "MIT"
+repository = "https://github.com/transtractor/transtractor-lib"
+
+[lib]
+name = "transtractor_core"
+crate-type = ["rlib"]
+
+[dependencies]
+chrono = "0.4.42"
+regex = "1.11.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

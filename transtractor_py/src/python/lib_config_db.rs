@@ -1,4 +1,4 @@
-use crate::configs::db::ConfigDB;
+use transtractor_core::configs::db::ConfigDB;
 use crate::python::exceptions::{ConfigLoadError, ConfigAccessError};
 use pyo3::prelude::*;
 

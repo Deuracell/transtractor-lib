@@ -1,4 +1,4 @@
-use crate::structs::TextItem;
+use transtractor_core::structs::TextItem;
 use pyo3::exceptions::PyRuntimeError;
 use pyo3::prelude::*;
 use pyo3::types::{PyAny, PyList};
@@ -43,7 +43,7 @@ pub fn py_text_items_to_rust_text_items(
 
 /// Convert a Rust StatementData to a Python StatementData object
 pub fn rust_statement_data_to_py_statement_data(
-    rust_statement_data: &crate::structs::StatementData,
+    rust_statement_data: &transtractor_core::structs::StatementData,
 ) -> PyResult<Py<PyAny>> {
     Python::attach(|py| {
         // Import the Python StatementData and Transaction classes

@@ -45,3 +45,4 @@ Issues = "https://github.com/transtractor/transtractor-lib/issues"
 features = ["pyo3/extension-module"]
 python-source = "python"
 include = ["python/transtractor/configs/**/*"]
+manifest-path = "transtractor_py/Cargo.toml"

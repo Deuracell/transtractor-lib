@@ -1,12 +1,12 @@
-use crate::configs::db::ConfigDB;
-use crate::configs::typer::StatementTyper;
-use crate::parsers::flows::config_json_file_to_config;
-use crate::parsers::flows::text_items_to_debug::text_items_to_debug;
-use crate::parsers::flows::text_items_to_layout::text_items_to_layout;
-use crate::parsers::flows::text_items_to_statement_datas::text_items_to_statement_datas;
+use transtractor_core::configs::db::ConfigDB;
+use transtractor_core::configs::typer::StatementTyper;
+use transtractor_core::parsers::flows::config_json_file_to_config;
+use transtractor_core::parsers::flows::text_items_to_debug::text_items_to_debug;
+use transtractor_core::parsers::flows::text_items_to_layout::text_items_to_layout;
+use transtractor_core::parsers::flows::text_items_to_statement_datas::text_items_to_statement_datas;
 use crate::python::exceptions::{ConfigLoadError, NoErrorFreeStatementData};
 use crate::python::utils;
-use crate::structs::StatementConfig;
+use transtractor_core::structs::StatementConfig;
 use pyo3::prelude::*;
 
 #[pyclass]
