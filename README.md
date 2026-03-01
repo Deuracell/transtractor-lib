@@ -44,8 +44,6 @@ Complete Rust API equivalent to the Python version:
 - High-level `Parser` struct for end-to-end parsing
 - Native Rust solution with no Python dependencies
 
-All three share the same battle-tested parsing logic.
-
 ## Installation
 
 ### Python Users: Install from PyPI
