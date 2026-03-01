@@ -13,5 +13,6 @@ crate-type = ["rlib"]
 
 [dependencies]
 transtractor_core = { path = "../transtractor_core" }
-pdfium-render = "0.8"
+unpdf = "0.1"
 thiserror = "1.0"
+tempfile = "3.0"
